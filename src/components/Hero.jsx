@@ -8,12 +8,13 @@ import {
   Mail, 
   Phone, 
   CheckCircle2, 
-  Sparkles,
-  TrendingUp,
-  Cpu,
-  Building2
+  Sparkles, 
+  TrendingUp, 
+  Cpu, 
+  Building2 
 } from 'lucide-react';
 import LinkedinIcon from './LinkedinIcon';
+import profilePhoto from '../assets/profile.jpg';
 import { profileData } from '../data/profileData';
 
 export default function Hero({ onOpenExecutiveBrief, onOpenContact }) {
@@ -134,7 +135,7 @@ export default function Hero({ onOpenExecutiveBrief, onOpenContact }) {
                 {/* Photo container */}
                 <div className="relative rounded-xl overflow-hidden aspect-[4/5] bg-slate-950 shadow-inner">
                   <img
-                    src={personal.photo}
+                    src={profilePhoto || personal.photo}
                     alt={personal.name}
                     className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
                   />

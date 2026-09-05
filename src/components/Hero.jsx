@@ -14,7 +14,7 @@ import {
   Building2 
 } from 'lucide-react';
 import LinkedinIcon from './LinkedinIcon';
-import profilePhoto from '../assets/profile.jpg';
+import profilePhoto from '../assets/profilePhoto';
 import { profileData } from '../data/profileData';
 
 export default function Hero({ onOpenExecutiveBrief, onOpenContact }) {
